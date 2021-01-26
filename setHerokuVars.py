@@ -8,7 +8,7 @@ def setVar(key, value,app_name):
   os.system(f'heroku config:set {key}={value} --app {app_name}')
 
 
-def setVarsFromFile(filename,app_name):  
+def setVarsFromFile(filename,app_name):
   if not os.path.exists(filename):
     print("No file found for: ",filename)
     return
